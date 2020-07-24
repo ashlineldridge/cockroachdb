@@ -57,7 +57,7 @@ spec:
 apiVersion: policy/v1beta1
 kind: PodDisruptionBudget
 metadata:
-  name: cockroachdb-budget
+  name: cockroachdb-budget # {"$kpt-set":"budget_setter"}
   labels:
     app: cockroachdb
 spec:
