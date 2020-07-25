@@ -10,11 +10,11 @@ upstream:
     directory: staging/cockroachdb
     ref: master
 dependencies:
-- name: hello-world
+- name: helloworld
   git:
-    repo: https://github.com/GoogleContainerTools/kpt
-    directory: /package-examples/helloworld-set
-    ref: v0.1.0
+    repo: https://github.com/ashlineldridge/kpt
+    directory: /package-examples/helloworld
+    ref: v0.26.1
   updateStrategy: resource-merge
 openAPI:
   definitions:
